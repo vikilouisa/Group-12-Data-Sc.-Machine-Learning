@@ -40,4 +40,4 @@
 
 ## Cover Image
 
-![Project Cover Image](CoverImage/cover_image.png)
+![Project Cover Image](CoverImage/Cover_Alle_Folien_1920x1080.png)
