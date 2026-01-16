@@ -5,8 +5,8 @@
 ## Baseline Model Results
 
 ### Model Selection
-- **Baseline Model Type:** [e.g., Random Forest, Logistic Regression, Linear Regression, Naive Bayes, etc.]
-- **Rationale:** [Brief explanation of why this model was chosen as baseline]
+- **Baseline Model Type:** Linear Regression
+- **Rationale:** [Before building a neural net, it is useful to start with a simple Baseline Model first – like the linear regression – to check the plausibility and to have an understanding of the data, also to initialize and scale the data, so it is possible to check the quality of the (implemented) features. Maybe the data is linear so there wouldn’t be a use of the Neural Net (resource-efficiency). The optimization used in the Baseline Model is also helpful to improve the Neural Net if the Neural Net doesn’t have any hidden layers. Furthermore, the linear regression in the Baseline Model can be used as helpful debugging tool.]
 
 ### Model Performance
 - **Evaluation Metric:** [e.g., Accuracy, F1-Score, Precision, Recall, MSE, MAE, R², etc.]
@@ -14,7 +14,7 @@
 - **Cross-Validation Score:** [Mean and standard deviation of CV scores, e.g., 0.82 ± 0.03]
 
 ### Evaluation Methodology
-- **Data Split:** [Train/Validation/Test split ratios, e.g., 70/15/15]
+- **Data Split:** Train/Validation/Test split ratio 67,2/16,4/16,4
 - **Evaluation Metrics:** [List all metrics used and justify why they are appropriate for this problem]
 
 ### Metric Practical Relevance
