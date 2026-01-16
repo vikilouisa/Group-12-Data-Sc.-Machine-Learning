@@ -6,11 +6,11 @@
 
 ## Description
 
-[Short project description here. Briefly summarize the problem you are trying to solve and the approach you're taking.]
+[We received the sales data of two branches of a bakery in Kiel. The data was split into three parts: the training data, the validation data and the test data without the sales values. The goal was to predict the sales values of the test dataset. Therefore we learned how to perform linear regressions and use imputation methods for missing values and then train simple neural networks with Python and TensorFlow and use them for predictions. We worked in VSCode in the Python environment as well as in GitHub Repository as a team.]
 
 ### Task Type
 
-[Image Classification / Chatbot / Regression / Clustering / Other]
+[For the Baseline Model we used linear regression For the Neural Net we used the model of a feedforward neural net.]
 
 ### Results Summary
 
