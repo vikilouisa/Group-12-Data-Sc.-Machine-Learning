@@ -1,3 +1,3 @@
 # Presentation
 
-**[Slides](name_of_your_file_including_the_presentation_slides)**
+**[Slides](vikilouisa/Group-12-Data-Sc.-Machine-Learning/blob/main/4_Presentation/Pr%C3%A4sentation_Group12_DataScience.pdf)**
