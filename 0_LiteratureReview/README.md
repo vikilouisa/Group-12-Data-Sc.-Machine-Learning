@@ -2,28 +2,28 @@
 
 Approaches or solutions that have been tried before on similar projects.
 
-**Summary of Each Work**:
+**Summary of Each Work**: The reviewed sources are presented in an order that reflects their functional role in the project, progressing from practical baseline methods to implementation-focused guidance and finally to theoretically grounded model design.
 
-- **Source 1**: [Title of Source 1]
+- **Source 1**: Albon, Chris (2019). Machine Learning Kochbuch – praktische Lösungen mit Python: Von der Vorverarbeitung der Daten bis zum Deep Learning (Frank Langenau, Trans.). Heidelberg: O’Reilly & dpunkt.verlag. (German edition)
 
-  - **[Link]()**
-  - **Objective**:
-  - **Methods**:
-  - **Outcomes**:
-  - **Relation to the Project**:
+  - **Objective**: Albon (2019) was consulted as a practical, recipe-oriented reference for implementing common machine-learning techniques, particularly for data preprocessing and baseline model construction. The book complemented theoretical course content by providing directly applicable procedural guidance.
+  - **Methods**: The KNN chapter (pp. 245–252) was used to implement KNN-based missing-data imputation and to establish KNN as a baseline model for comparison with alternative approaches. Selected neural-network chapters (pp. 291–296, 299–312) were reviewed to consolidate understanding of basic network components and training principles.
+  - **Outcomes**: The source enabled the successful implementation of KNN for imputation and baseline evaluation. The neural-network sections contributed primarily at a conceptual level, reinforcing familiarity with activation functions, layer structures, and training mechanisms so it enriched the theoretical background needed to interpret course materials and external resources, ensuring that the project’s methodological choices were grounded in a broader understanding of machine‑learning techniques.
+  - **Relation to the Project**: Albon (2019) mainly supported early-stage methodological setup by providing concrete procedures for preprocessing and baseline modeling. It functioned as a hands-on counterpart to more conceptually oriented literature used later in the project.
 
-- **Source 2**: [Title of Source 2]
+- **Source 2**: Scarpino, Matthew (2018). TensorFlow für Dummies. Weinheim: Wiley-VCH Verlag. (German edition)
 
-  - **[Link]()**
-  - **Objective**:
-  - **Methods**:
-  - **Outcomes**:
-  - **Relation to the Project**:
+  - **Objective**: Scarpino (2018) aims to be a beginner-oriented introduction to TensorFlow, and therefor was consulted in order to establish a coherent understanding of common training workflows and optimization strategies. The book served as a methodological companion to course materials, focusing on the rationale behind design and training choices rather than on reproducing predefined code snippets from the course.
+  - **Methods**: Chapter 5 was used to clarify key training parameters such as epochs, steps, and optimizers, with particular attention to the Adam optimizer. Chapter 7 introduced regularization and dropout as techniques for improving generalization, which informed the design of the project’s neural network. In addition, Chapter 15 provided a structured, step-by-step overview of a typical TensorFlow training pipeline.
+  - **Outcomes**: The source enabled a more systematic interpretation of training dynamics and supported deliberate selection of optimizers and regularization techniques as well as the tuning of training parameters. Its accessible explanations also facilitated error diagnosis and debugging during implementation.
+  - **Relation to the Project**: Scarpino (2018) primarily supported the practical realization of the neural-network workflow, complementing more theoretically oriented sources. The book helped ensure that implementation choices in TensorFlow were methodologically motivated and consistently applied throughout the project.
 
-- **Source 3**: [Title of Source 3]
+- **Source 3**: Raschka, Sebastian & Mirjalili, Vahid (2018, 2nd ed.). Machine Learning mit Python und Scikit‑Learn und TensorFlow – Das umfassende Praxis‑Handbuch für Data Science, Deep Learning und Predictive Analytics (Knut Lorenzen, Trans.). Frechen: mitp‑Verlag. (German edition)
 
-  - **[Link]()**
-  - **Objective**:
-  - **Methods**:
-  - **Outcomes**:
-  - **Relation to the Project**:
+  - **Objective**: Raschka and Mirjalili (2018) is intended to be a (our) comprehensive and theoretically grounded reference for machine-learning methods and neural-network design. The book served to contextualize and justify architectural and training-related decisions within the project.
+  - **Methods**: Chapter 10 was used as guidance on linear regression techniques, while Chapters 12 and 13 informed the understanding of neural-network architectures and TensorFlow-based training workflows. The overview of activation functions and their explanations in Chapter 13.4 (p. 450) was used to evaluate and select ReLU as an appropriate activation function for the project’s model.
+  - **Outcomes**: The activation-function comparison supported a well-reasoned selection of ReLU and deepened understanding of how different functions affect learning behavior. Additional case studies illustrated advanced optimization strategies, which were reviewed but not adopted due to the project’s scope (e. g. the breast‑cancer case study in Chapter 6 which illustrated extensive optimization possibilities).
+  - **Relation to the Project**: Raschka and Mirjalili (2018) primarily contributed to the theoretical justification of model design choices, complementing more implementation-focused sources. The book ensured that architectural and training decisions were grounded in established machine-learning theory and also provided conceptual clarity without overwhelming our project with unnecessary complexity.
+ 
+**Overall summary:**
+Across the reviewed literature, a common emphasis is placed on combining conceptual understanding with practical implementation. Albon (2019) focuses on recipe-style solutions for rapid prototyping, Scarpino (2018) emphasizes beginner-friendly TensorFlow workflows and troubleshooting, and Raschka and Mirjalili (2018) provide a more theoretically grounded perspective on model design. Together, these sources informed both the selection of baseline methods and the design of the neural-network architecture used in the project.
