@@ -1,12 +1,29 @@
-# [Your Project Title Here]
+# Time-Series Sales Forecasting for a Bakery Using Linear Regression and Neural Networks
 
 ## Repository Link
 
-[https://github.com/vikilouisa/Group-12-Data-Sc.-Machine-Learning]
+https://github.com/vikilouisa/Group-12-Data-Sc.-Machine-Learning
 
 ## Description
 
-[We received the sales data of two branches of a bakery in Kiel. The data was split into three parts: the training data, the validation data and the test data without the sales values. The goal was to predict the sales values of the test dataset. Therefore we learned how to perform linear regressions and use imputation methods for missing values and then train simple neural networks with Python and TensorFlow and use them for predictions. We worked in VSCode in the Python environment as well as in GitHub Repository as a team.]
+This project aims to predict daily sales (Umsatz) of a bakery in Kiel using machine learning methods. 
+The dataset includes historical sales data across multiple product groups (Warengruppe), enriched with weather data and calendar-based features.
+
+The prediction task is a supervised regression problem with a strict time-based train/validation/test split:
+
+- Train: 01.07.2013 – 31.07.2017  
+- Validation: 01.08.2017 – 31.07.2018  
+- Test: 01.08.2018 – 31.07.2019  
+
+The goal is to forecast sales values for the test period where the target variable is not provided.
+
+Two modeling approaches were implemented:
+
+1. Linear Regression (baseline model)
+2. Feedforward Neural Networks (per product group)
+
+Feature engineering plays a central role in the modeling process, including lag features, rolling statistics, seasonal transformations, and holiday indicators.
+
 
 ### Task Type
 
