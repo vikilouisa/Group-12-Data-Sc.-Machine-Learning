@@ -6,19 +6,35 @@
 
 ### Model Selection
 - **Baseline Model Type:** Linear Regression
-- **Rationale:** [Before building a neural net, it is useful to start with a simple Baseline Model first – like the linear regression – to check the plausibility and to have an understanding of the data, also to initialize and scale the data, so it is possible to check the quality of the (implemented) features. Maybe the data is linear so there wouldn’t be a use of the Neural Net (resource-efficiency). The optimization used in the Baseline Model is also helpful to improve the Neural Net if the Neural Net doesn’t have any hidden layers. Furthermore, the linear regression in the Baseline Model can be used as helpful debugging tool.]
+- **Rationale:** Linear regression was selected as the baseline model because it provides a transparent and interpretable framework for evaluating the predictive power of engineered time-series features. As a regression-based forecasting approach, it allows us to assess whether sales patterns can be sufficiently explained through linear relationships between lag variables, seasonal indicators, and calendar-based features. Establishing this benchmark enables a structured comparison with more complex models in later stages of the project.
 
 ### Model Performance
-- **Evaluation Metric:** [e.g., Accuracy, F1-Score, Precision, Recall, MSE, MAE, R², etc.]
-- **Performance Score:** [e.g., 85% accuracy, F1-score of 0.78, MSE of 0.15]
-- **Cross-Validation Score:** [Mean and standard deviation of CV scores, e.g., 0.82 ± 0.03]
+- **Evaluation Metric:** R² and Adjusted R² 
+- **Performance Score:** Validation R² per Warengruppe:
+   - WG1: 0.476  
+  - WG2: 0.862  
+  - WG3: 0.848  
+  - WG4: 0.182  
+  - WG5: 0.248  
+  - WG6: 0.552
+- **Cross-Validation Score:** was not applied
 
 ### Evaluation Methodology
 - **Data Split:** Train/Validation/Test split ratio 67,2/16,4/16,4
-- **Evaluation Metrics:** [List all metrics used and justify why they are appropriate for this problem]
+- **Evaluation Metrics:**
+  - **R² (Coefficient of Determination):** Measures the proportion of variance in daily sales explained by the model.  
+  - **Adjusted R²:** Accounts for the number of predictors and penalizes unnecessary complexity.
+  - A time-based split ensures that future information is not used in training, thereby preventing data leakage and maintaining realistic forecasting conditions.
 
 ### Metric Practical Relevance
-[Explain the practical relevance and business impact of each chosen evaluation metric. How do these metrics translate to real-world performance and decision-making? What do the metric values mean in the context of your specific problem domain?]
+R² values provide insight into how reliably demand patterns can be modeled for each product group.
+
+- High explanatory power in WG2 and WG3 indicates stable and predictable demand behavior.
+- Moderate results in WG1 and WG6 suggest partially structured but more volatile demand.
+- Lower values in WG4 and WG5 point to higher noise levels or irregular purchasing patterns.
+
+From a business perspective, higher predictive accuracy improves planning reliability for inventory management and staffing decisions, while lower performance highlights areas where more advanced modeling techniques may be necessary.
 
 ## Next Steps
-This baseline model serves as a reference point for evaluating more sophisticated models in the [Model Definition and Evaluation](../3_Model/README.md) phase.
+The linear regression model establishes a performance benchmark. In the next phase, more advanced machine learning approaches will be evaluated to determine whether nonlinear modeling can capture additional structure in the data and improve forecasting accuracy beyond this baseline. Further info can be found in the [Model Definition and Evaluation](../3_Model/README.md) phase.
+
