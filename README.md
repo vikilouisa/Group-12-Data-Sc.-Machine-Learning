@@ -6,7 +6,7 @@ https://github.com/vikilouisa/Group-12-Data-Sc.-Machine-Learning
 
 ## Description
 
-This project aims to predict daily sales (Umsatz) of a bakery in Kiel using machine learning methods. 
+This project aims to predict daily sales (Umsatz) of a bakery using machine learning methods. 
 The dataset includes historical sales data across multiple product groups (Warengruppe), enriched with weather data and calendar-based features.
 
 The prediction task is a supervised regression problem with a strict time-based train/validation/test split:
