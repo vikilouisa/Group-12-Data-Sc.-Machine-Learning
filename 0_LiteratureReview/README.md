@@ -5,7 +5,7 @@ This section reviews academic and practical literature related to retail sales f
 ---
 
 ## Source 1: Da Veiga et al. (2014)  
-**Da Veiga, L., Amaral, R., & Faria, F. (2014). Demand forecasting in food retail: A comparison between the Holt–Winters and ARIMA models. WSEAS Transactions on Business and Economics, 11, 608–614**
+**Da Veiga, L., Amaral, R., & Faria, F. (2014). Demand forecasting in food retail: A comparison between the Holt–Winters and ARIMA models. WSEAS Transactions on Business and Economics, 11, 608–614:**
 
 - **Objective:**  
   The study compares two classical time-series forecasting methods — ARIMA and Holt-Winters — for predicting demand of perishable food products in retail environments, where short product life cycles and volatile demand patterns make accurate forecasting critical for operational decisions.
@@ -22,7 +22,7 @@ This section reviews academic and practical literature related to retail sales f
 ---
 
 ## Source 2: Huber & Stuckenschmidt (2020)  
-**Huber, J., & Stuckenschmidt, H. (2020). Daily retail demand forecasting using machine learning with emphasis on calendric special days. International Journal of Forecasting, 36, 1420-1438**
+**Huber, J., & Stuckenschmidt, H. (2020). Daily retail demand forecasting using machine learning with emphasis on calendric special days. International Journal of Forecasting, 36, 1420-1438:**
 
 - **Objective:**  
   The study investigates machine learning approaches for daily retail demand forecasting, with particular focus on calendric special days and event-based predictors on sales patterns.
@@ -39,7 +39,7 @@ This section reviews academic and practical literature related to retail sales f
 ---
 
 ## Source 3: Albon (2019)  
-**Albon, C. (2019). Machine Learning Kochbuch – praktische Lösungen mit Python: Von der Vorverarbeitung der Daten bis zum Deep Learning (Frank Langenau, Trans.). Heidelberg: O’Reilly & dpunkt.verlag.**
+**Albon, C. (2019). Machine Learning Kochbuch – praktische Lösungen mit Python: Von der Vorverarbeitung der Daten bis zum Deep Learning (Frank Langenau, Trans.). Heidelberg: O’Reilly & dpunkt.verlag:**
 
 - **Objective:**  
   To provide practical guidance for implementing common machine learning techniques, particularly data preprocessing and baseline modeling.
@@ -56,7 +56,7 @@ This section reviews academic and practical literature related to retail sales f
 ---
 
 ## Source 4: Scarpino (2018)  
-**Scarpino, M. (2018). TensorFlow für Dummies. Weinheim: Wiley-VCH Verlag**
+**Scarpino, M. (2018). TensorFlow für Dummies. Weinheim: Wiley-VCH Verlag:**
 
 - **Objective:**  
   To provide an accessible introduction to TensorFlow workflows and neural network training processes and to establish a coherent understanding of standard training workflows, optimization strategies, and model configuration principles.
@@ -73,7 +73,7 @@ This section reviews academic and practical literature related to retail sales f
 ---
 
 ## Source 5: Raschka & Mirjalili (2018)  
-**Raschka, S. & Mirjalili, V. (2018, 2nd ed.). Machine Learning mit Python und Scikit‑Learn und TensorFlow – Das umfassende Praxis‑Handbuch für Data Science, Deep Learning und Predictive Analytics (Knut Lorenzen, Trans.). Frechen: mitp‑Verlag.**
+**Raschka, S. & Mirjalili, V. (2018, 2nd ed.). Machine Learning mit Python und Scikit‑Learn und TensorFlow – Das umfassende Praxis‑Handbuch für Data Science, Deep Learning und Predictive Analytics (Knut Lorenzen, Trans.). Frechen: mitp‑Verlag:**
 
 - **Objective:**  
   To provide a theoretically grounded overview of machine-learning algorithms and neural-network architectures, with emphasis on regression techniques, activation functions, and model regularization.
