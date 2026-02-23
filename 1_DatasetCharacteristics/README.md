@@ -5,26 +5,27 @@
 ## Dataset Information
 
 ### Dataset Source
-- **Dataset Link:** (https://github.com/vikilouisa/Group-12-Data-Sc.-Machine-Learning/tree/main/1_DatasetCharacteristics/Dataset_Sources)
+- **Dataset Link:** https://github.com/vikilouisa/Group-12-Data-Sc.-Machine-Learning/tree/main/1_DatasetCharacteristics/Dataset_Sources
 
 ### Dataset Characteristics
-- **Number of Observations:** [Total number of samples/records in your dataset. For time series data, also specify the temporal resolution (e.g., daily, hourly, etc.)]
-- **Number of Features:** [Total number of features in your dataset]
+- **Number of Observations:** 9,334 entries in the primary sales data; after full calendar merge 14,277 rows; daily resolution.
+- **Number of Features:** 4 raw features in the original sales data (id, date, product group, revenue); after merging with weather and calendar data a total of 11 features.
 
 ### Target Variable/Label
-- **Label Name:** [Name of the target variable/column]
-- **Label Type:** [Classification/Regression/Clustering/Other]
-- **Label Description:** [What does this label represent? What is the prediction task?]
-- **Label Values:** [For classification: list of classes and their meanings. For regression: range of values. For other tasks: describe the label structure]
-- **Label Distribution:** [Brief description of class balance for classification or value distribution for regression]
+- **Label Name:** Umsatz
+- **Label Type:** Regression
+- **Label Description:** Daily sales (revenue in €) of a bakery, broken down by product group. The goal is to predict future sales per day and product group.
+- **Label Values:** Continuous positive decimals (float); range from 7.05 (in product group 6) to 1,879.46 (in product group 5).
+- **Label Distribution:** Sales vary significantly between product groups. Product group 6 is structurally underrepresented, as it is only available in November and December.
 
 ### Feature Description
 [Provide a brief description of each feature or group of features in your dataset. If you have many features, group them logically and describe each group. Include information about data types, ranges, and what each feature represents.]
 
-**Example format:**
-- **Feature 1 (feature_name):** [Description of what this feature represents, data type, and any relevant details]
-- **Feature 2 (feature_name):** [Description of what this feature represents, data type, and any relevant details]
-- **Feature Group (group_name):** [Description of a group of related features]
+- **Feature 1 (id):** Unique numerical ID for each record, composed of date (YYMMDD) and product group.
+- **Feature 2 (date):** Date of sale, type datetime, daily resolution. Period: 01.07.2013 – 31.07.2019.
+- **Feature 3 (Warengruppe):** Product group as an integer category (1–6). Group 6 is only available in Nov./Dec., which represents a structural class imbalance.
+- **Weather Feature Group (Bewoelkung, Temperatur, Windgeschwindigkeit, Wettercode):** Daily weather data. Missing values ​​were imputed via time-based interpolation (linear interpolation for Temperatur and Windgeschwindigkeit, rounded interpolation for Bewoelkung, forward/backward filling for the categorical Wettercode).
+- **Calendar Feature Group (KielerWoche, school_holiday, public_holiday):** Binary indicator variables (0/1) that indicate whether a day falls within Kieler Woche, school holidays (Schleswig-Holstein), or a public holiday. Missing values ​​were filled with 0.
 
 ## Exploratory Data Analysis
 
