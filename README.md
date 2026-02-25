@@ -60,9 +60,9 @@ For the neural network model, we implemented a feedforward neural network.
     - **rolling statistics** - moving averages capture trend and volatility
     - **calendar-based features** (weekday, public holiday, seasonal effects) - improve predictions, especially for volatile product groups
     - **logarithmic transformation** in Warengruppe 4 - demonstrates that certain product groups benefit from non-linear feature transformation
-- **Model Strengths:** captures both short- and long-term patterns, improves performance over baseline, robust to seasonal fluctuations, and adapts to different product groups
+- **Model Strengths:** The model captures both short- and long-term patterns, improves performance over baseline, robust to seasonal fluctuations, and adapts to different product groups
 - **Model Limitations:** The model still struggles with product groups that have limited data or high volatility (Warengruppe 4 and 6), although performance is substantially improved compared to the linear baseline model.
-- **Business Impact:** enables better production decisions, optimizes inventory to reduce overproduction or stockouts, and highlights challenging product groups for targeted improvements
+- **Business Impact:** The model enables better production decisions, optimizes inventory to reduce overproduction or stockouts, and highlights challenging product groups for targeted improvements
 
 ## Documentation
 
