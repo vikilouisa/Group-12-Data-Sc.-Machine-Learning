@@ -27,14 +27,15 @@ Feature engineering plays a central role in the modeling process, including lag 
 
 ### Task Type
 
-For the Baseline Model we used linear regression For the Neural Net we used the model of a feedforward neural net.
+For the baseline model, we used linear regression.  
+For the neural network model, we implemented a feedforward neural network.
 
 ### Results Summary
 
 #### Best Model Performance
 - **Best Model:** Feedforward neural net
-- **Evaluation Metric:** (weighted) R² for whole neural net and each product group seperately, MSE, MAE and MAPE for each product group
-- **Final Performance:** Best score achieved: Weighted R² (val) = 0.551, Weighted MAPE (val) = 16.58%, and for each product group (on validation data):
+- **Evaluation Metrics:** Weighted R² for the overall neural network model, and R², MSE, MAE, and MAPE reported separately for each product group.
+- **Final Performance:** Best validation performance: Weighted R² = 0.551 and Weighted MAPE = 16.58%.  Performance per product group (validation data):
     - Warengruppe 1 – Best score achieved: R² = 0.531, MSE = 840.78, MAE = 21.87, MAPE = 18.56%
     - Warengruppe 2 – Best score achieved: R² = 0.895, MSE = 1689.05, MAE = 31.02, MAPE = 8.83%
     - Warengruppe 3 – Best score achieved: R² = 0.869, MSE = 751.86, MAE = 20.35, MAPE = 14.08%
@@ -50,7 +51,7 @@ For the Baseline Model we used linear regression For the Neural Net we used the 
     - Warengruppe 4 – R² = -0.01
     - Warengruppe 5 – R² = 0.03
     - Warengruppe 6 – R² = 0.02
-- **Improvement Over Baseline:** Difference in R² performance ranges from 0.17 (smallest, Warengruppe 4) to 0.51 (largest, Warengruppe 1)
+- **Improvement Over Baseline:** The improvement in R² ranges from 0.17 (Warengruppe 4) to 0.51 (Warengruppe 1).
 - **Best Alternative Model:** As a second-best model, we consider our neural net prior to the late optimization for Warengruppe 4 (logarithmic transformation), which was introduced subsequently to improve performance.
 
 #### Key Insights
@@ -58,9 +59,9 @@ For the Baseline Model we used linear regression For the Neural Net we used the 
     - **lagged sales features** - historical sales are highly predictive of future sales
     - **rolling statistics** - moving averages capture trend and volatility
     - **calendar-based features** (weekday, public holiday, seasonal effects) - improve predictions, especially for volatile product groups
-    - **logarithmic transormation** in Warengruppe 4 - demonstrates that certain product groups benefit from non-linear feature transformation
+    - **logarithmic transformation** in Warengruppe 4 - demonstrates that certain product groups benefit from non-linear feature transformation
 - **Model Strengths:** captures both short- and long-term patterns, improves performance over baseline, robust to seasonal fluctuations, and adapts to different product groups
-- **Model Limitations:** still struggles with product groups with few data and highly volatile product groups (Warengruppe 4 and 6), but not as much as before in (linear) baseline model
+- **Model Limitations:** The model still struggles with product groups that have limited data or high volatility (Warengruppe 4 and 6), although performance is substantially improved compared to the linear baseline model.
 - **Business Impact:** enables better production decisions, optimizes inventory to reduce overproduction or stockouts, and highlights challenging product groups for targeted improvements
 
 ## Documentation
